@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:id="@+id/polls_rr"
+    android:layout_height="80dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/image_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_share"
+        app:riv_mutate_background="true"
+        app:riv_tile_mode="repeat"
+        app:riv_oval="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:gravity="start|center"
+        android:id="@+id/title_polls"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/image_money"
+        android:layout_toLeftOf="@+id/price_polls"
+        android:textSize="20sp"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:textSize="15sp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/price_polls"/>
+
+</RelativeLayout>

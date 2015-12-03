@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:weightSum="1"
+    android:layout_height="80dp">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:layout_gravity="center"
+        android:id="@+id/question"
+        android:textSize="17sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.6"
+        android:weightSum="1"
+        android:id="@+id/linearLayout"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:clipChildren="true"
+            android:clickable="false"
+            android:id="@+id/ll1"
+            android:layout_weight="0.2">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/circle"
+                android:text="1"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:tag="unpressed"
+                android:id="@+id/rate_1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:clipChildren="true"
+            android:clickable="false"
+            android:id="@+id/ll2"
+            android:layout_weight="0.2">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/circle"
+                android:text="2"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:tag="unpressed"
+                android:id="@+id/rate_2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:clipChildren="true"
+            android:clickable="false"
+            android:id="@+id/ll3"
+            android:layout_weight="0.2">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/circle"
+                android:text="3"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:tag="unpressed"
+                android:id="@+id/rate_3"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:clipChildren="true"
+            android:clickable="false"
+            android:id="@+id/ll4"
+            android:layout_weight="0.2">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/circle"
+                android:text="4"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:tag="unpressed"
+                android:id="@+id/rate_4"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:clipChildren="true"
+            android:clickable="false"
+            android:id="@+id/ll5"
+            android:layout_weight="0.2">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/circle"
+                android:text="5"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:tag="unpressed"
+                android:id="@+id/rate_5"/>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

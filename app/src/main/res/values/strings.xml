@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">InterYou</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string name="Polls">Опросы</string>
+
+    <string-array name="screen_array">
+        <item>Опросы</item>
+        <item>Личный кабинет</item>
+    </string-array>
+    
+    <string-array name="personal_tab_money_array">
+        <item>Перевод на QIWI кошелёк</item>
+        <item>Бонусы и подарки</item>
+        <item>Пожертвования</item>
+    </string-array>
+
+    <string-array name="personal_tab_profile_array">
+        <item>ФИО</item>
+        <item>E-mail</item>
+        <item>Пол</item>
+        <item>Страна</item>
+        <item>Город</item>
+        <item>Год рождения</item>
+        <item>Образование</item>
+        <item>Занятость</item>
+        <item>Заработок</item>
+        <item>Финансовое состояние</item>
+        <item>Дети</item>
+        <item>Семейное положение</item>
+        <item>Автомобиль</item>
+        <item>Оператор</item>
+    </string-array>
+    
+    <string-array name="personal_tab_profile_item_2">
+        <item>М</item>
+        <item>Ж</item>
+    </string-array>
+    
+    
+    <string-array name="personal_tab_profile_item_3">
+        <item>Россия</item>
+        <item>Украина</item>
+        <item>Беларусь</item>
+        <item>Казахстан</item>
+    </string-array>
+
+    <string-array name="personal_tab_profile_item_6">
+        <item>Неоконченное среднее</item>
+        <item>Неоконченное высшее</item>
+        <item>Среднее/среднеспециальное</item>
+        <item>Высшее</item>
+        <item>Учёная степень</item>
+    </string-array>
+
+    <string-array name="personal_tab_profile_item_7">
+        <item>Частичная занятость</item>
+        <item>Полная занятость</item>
+        <item>Не работаю</item>
+    </string-array>
+
+    <string-array name="personal_tab_profile_item_8">
+        <item> &#60;10 000</item>
+        <item>10-20т</item>
+        <item>30-40т</item>
+        <item>40-50т</item>
+        <item>50-60т</item>
+        <item>60-70т</item>
+        <item>70-80т</item>
+        <item> &#62;80 000</item>
+    </string-array>
+
+    <string-array name="personal_tab_profile_item_9">
+        <item>Низкое</item>
+        <item>Ниже среднего</item>
+        <item>Среднее</item>
+        <item>Выше среднего</item>
+    </string-array>
+    
+    <string-array name="personal_tab_profile_item_10">
+        <item>Нет</item>
+        <item>1 ребёнок</item>
+        <item>2 ребёнка</item>
+        <item>3 ребёнка</item>
+        <item>&#62;3 детей</item>
+    </string-array>
+
+    <string-array name="personal_tab_profile_item_11">
+        <item>Не замужем/ отдельно от родителей</item>
+        <item>Не замужем/ с родителями</item>
+        <item>Замужем/женат</item>
+    </string-array>
+
+    <string-array name="personal_tab_profile_item_12">
+        <item>Есть(отечественная)</item>
+        <item>Есть(иномарка)</item>
+        <item>Нет</item>
+    </string-array>
+
+    <string-array name="personal_tab_profile_item_13">
+        <item>МТС</item>
+        <item>Билайн</item>
+        <item>Мегафон</item>
+        <item>Yota</item>
+        <item>другой</item>
+    </string-array>
+
+</resources>

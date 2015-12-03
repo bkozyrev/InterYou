@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/img_bck"
+        android:layout_centerInParent="true" />
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/auth_first_step"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="160dp"
+        card_view:cardCornerRadius="15dp"
+        card_view:cardBackgroundColor="@color/back_blue"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        android:translationZ="10dp"
+        android:elevation="5dp"
+        card_view:cardElevation="3dp"
+        android:layout_centerInParent="true"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:visibility="visible">
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Авторизация"
+                android:textColor="@color/white"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="visible"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="20sp" />
+            <EditText
+                android:layout_width="175dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:hint="Телефон"
+                android:textColorHint="@color/white"
+                android:textAlignment="inherit"
+                android:gravity="center"
+                android:background="@drawable/roun_corn_backblue_strokewhite"
+                android:visibility="visible"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="5dp"
+                android:inputType="phone"
+                android:textColorHighlight="@color/white"
+                android:textSize="17sp"
+                android:id="@+id/edit_phone" />
+            <Button android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:text="Далее"
+                android:textColor="@color/back_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:background="@drawable/roun_corn_allwhite"
+                android:textSize="10sp"
+                android:textAlignment="center"
+                android:singleLine="true"
+                android:visibility="visible"
+                android:id="@+id/btn_next"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="5dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/auth_second_step"
+        android:visibility="invisible">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_last"
+            android:text="Для завершения авторизации, введите, пожалуйста код подтверждения, высланный на ваш мобильный телефон."
+            android:textColor="@color/text_color_secondary"
+            android:textAlignment="gravity"
+            android:gravity="center"/>
+        <EditText
+            android:layout_width="175dp"
+            android:layout_height="30dp"
+            android:textColor="@color/text_color_secondary"
+            android:hint="Ввод"
+            android:textColorHint="@color/text_color_secondary"
+            android:background="@drawable/roun_corn_backwhite_strokegray"
+            android:visibility="visible"
+            android:gravity="center"
+            android:inputType="number"
+            android:id="@+id/edit_code"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_last"
+            android:layout_marginTop="10dp" />
+        <Button android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="false"
+            android:text="Готово"
+            android:textColor="@color/white"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:background="@drawable/roun_corn_allblue"
+            android:textSize="10sp"
+            android:textAlignment="center"
+            android:singleLine="true"
+            android:id="@+id/btn_done"
+            android:layout_below="@+id/edit_code"
+            android:layout_marginTop="15dp" />
+
+    </RelativeLayout>
+
+    <fr.castorflex.android.circularprogressbar.CircularProgressBar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:indeterminate="true"
+        android:id="@+id/bar"
+        android:layout_above="@+id/auth_second_step"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        app:cpb_colors="@array/bar_colors"
+        app:cpb_rotation_speed="1.0"
+        app:cpb_sweep_speed="1.0"
+        app:cpb_stroke_width="4dp"
+        app:cpb_min_sweep_angle="10"
+        app:cpb_max_sweep_angle="300"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
